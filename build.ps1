@@ -78,7 +78,7 @@ function Output-v8 {
 
     xcopy /y build\$configuration\*.dll     "$t\bin\*"
     xcopy /y build\$configuration\lib\*.lib "$t\lib\*"
-    xcopy /y include\*                      "$t\include\*"
+    xcopy /y include\*                     "$t\include\*" /E
 
     popd
 }
